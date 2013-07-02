@@ -1,0 +1,236 @@
+{
+    "example":
+    {
+        "Files":
+        [{ 
+            "name": "bg_example", 
+            "src": "assets/img/bg_example.png" 
+        },{ 
+            "src": "assets/img/player.png", 
+            "assets": 
+            [{
+                "name": "player_standing",
+                "pos": { "x": 0, "y": 0 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "player_walking",
+                "pos": { "x": 64, "y": 0 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "player_attacking_01",
+                "pos": { "x": 128, "y": 0 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "player_attacking_02",
+                "pos": { "x": 192, "y": 0 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "player_attacking_03",
+                "pos": { "x": 0, "y": 96 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "player_attacking_04",
+                "pos": { "x": 64, "y": 96 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "player_damaged",
+                "pos": { "x": 128, "y": 96 },
+                "size": { "height": 96, "width": 64 }
+            }]
+        },{ 
+            "src": "assets/img/enemy.png", 
+            "assets": 
+            [{
+                "name": "enemy_standing",
+                "pos": { "x": 0, "y": 0 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "enemy_walking",
+                "pos": { "x": 64, "y": 0 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "enemy_attacking_01",
+                "pos": { "x": 128, "y": 0 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "enemy_attacking_02",
+                "pos": { "x": 192, "y": 0 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "enemy_attacking_03",
+                "pos": { "x": 0, "y": 96 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "enemy_attacking_04",
+                "pos": { "x": 64, "y": 96 },
+                "size": { "height": 96, "width": 64 }
+            },{
+                "name": "enemy_damaged",
+                "pos": { "x": 128, "y": 96 },
+                "size": { "height": 96, "width": 64 }
+            }]
+        },{
+            "src": "assets/audio/sfx_example.ogg",
+            "assets":
+            [{
+                "name": "sfx_attack",
+                "start": 0,
+                "length": 0.235
+            },{
+                "name": "sfx_move",
+                "start": 0.235,
+                "length": 0.424,
+                "volume": 0.25,
+                "loop": true
+            },{
+                "name": "sfx_die",
+                "start": 0.660,
+                "length": 0.553,
+                "volume": 3.0
+            }]
+        }],
+        "Environment":
+        [{
+            "img": "bg_example",
+            "pos": { "x": 0, "y": 0 },
+            "size": { "height": 1400, "width": 800 }
+        }],
+        "Entities":
+        [{
+            "pos": { "x": 340, "y": 50 },
+            "type": "player"
+        },{
+            "pos": { "x": 365, "y": 35 },
+            "type": "player"
+        },{
+            "pos": { "x": 390, "y": 50 },
+            "type": "player"
+        },{
+            "pos": { "x": 350, "y": 90 },
+            "type": "player"
+        },{
+            "pos": { "x": 380, "y": 90 },
+            "type": "player"
+        },
+
+        {
+            "pos": {"x": 600, "y": 100 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 680, "y": 110 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 640, "y": 135 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 555, "y": 450 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 595, "y": 425 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 660, "y": 440 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 625, "y": 420 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 240, "y": 900 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 120, "y": 950 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 160, "y": 920 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 230, "y": 975 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 200, "y": 960 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 115, "y": 1100 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 280, "y": 1110 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 275, "y": 600 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 225, "y": 550 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 250, "y": 500 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 160, "y": 450 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 200, "y": 400 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 220, "y": 250 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 80, "y": 200 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 120, "y": 250 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 675, "y": 790 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 585, "y": 805 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 635, "y": 825 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 600, "y": 955 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 595, "y": 1090 },
+            "type": "enemy"
+        },{
+            "pos": {"x": 655, "y": 1085 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 590, "y": 1230 },
+            "type": "enemy"
+        },
+
+        {
+            "pos": {"x": 180, "y": 1305 },
+            "type": "enemy"
+        }]
+    },
+    "demo": 
+    {
+        "Files":
+        [{
+            "name": "bg_demo",
+            "src": "/assets/img/bg_demo.png"    
+        }]
+    }
+}
